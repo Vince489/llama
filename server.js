@@ -133,6 +133,7 @@ async function searchWeb(query) {
 app.post('/chat', async (req, res) => {
     const userMessage = req.body.message.toLowerCase().trim();
 
+    // Handle email requests
     if (userMessage.includes('unread email') || userMessage.includes('unread mail')) {
         if (!oAuth2Client.credentials) {
             res.json({ response: 'Please <a href="/auth">authenticate with Gmail</a> first to access emails.' });
@@ -164,9 +165,49 @@ app.post('/chat', async (req, res) => {
         }
         return;
     }
+    
+    // Handle web search requests
+    if (userMessage.includes('search for') || userMessage.startsWith('find') || userMessage.includes('look up')) {
+        // Extract the search query
+        let searchQuery = userMessage;
+        if (userMessage.includes('search for')) {
+            searchQuery = userMessage.split('search for')[1].trim();
+        } else if (userMessage.startsWith('find')) {
+            searchQuery = userMessage.substring(4).trim();
+        } else if (userMessage.includes('look up')) {
+            searchQuery = userMessage.split('look up')[1].trim();
+        }
+        
+        // Perform the search
+        const searchResults = await searchWeb(searchQuery);
+        
+        if (searchResults.length === 0) {
+            res.json({ response: `I couldn't find any results for "${searchQuery}".` });
+            return;
+        }
+        
+        // Format the results as HTML
+        let response = `<div class="search-results">
+            <div class="search-query">Search results for: <strong>${searchQuery}</strong></div>
+            <div class="results-list">`;
+            
+        searchResults.forEach(result => {
+            response += `
+                <div class="search-result">
+                    <a href="${result.link}" target="_blank" class="result-title">${result.title}</a>
+                    <div class="result-link">${result.displayLink}</div>
+                    <div class="result-snippet">${result.snippet}</div>
+                </div>`;
+        });
+        
+        response += `</div></div>`;
+        
+        res.json({ response: response, isHTML: true });
+        return;
+    }
 
     // Handle other chatbot logic here
-    res.json({ response: 'Sorry, I can only show unread emails right now.' });
+    res.json({ response: 'I can show unread emails or search the web. Try saying "search for climate change" or "show unread emails".' });
 });
 
 app.get('/', (req, res) => {

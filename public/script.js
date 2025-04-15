@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         messageDiv.classList.add(`${sender}-message`);
         
         // Check if the response contains HTML
-        if (sender === 'bot' && text.includes('<div class="email-')) {
+        if (sender === 'bot' && (text.includes('<div class="email-') || text.includes('<div class="search-'))) {
             messageDiv.innerHTML = text;
         } else {
             messageDiv.textContent = text;
