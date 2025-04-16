@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTLR Smart Assistants</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.3/cdn.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center">BUTLR Smart Assistants</h1>
+            <p class="text-xl text-center mt-2">Intelligent Automation for Your Home</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">Find Your Perfect BUTLR</h2>
+            <p class="text-lg text-center max-w-4xl mx-auto mb-4">
+                Discover our range of intelligent assistants designed to transform your smart home experience with
+                advanced AI capabilities and seamless integration.
+            </p>
+
+            <div class="max-w-4xl mx-auto mb-8 bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold text-lg mb-2 text-center">Color Coding Key:</h3>
+                <div class="flex flex-col md:flex-row justify-center gap-4 text-center">
+                    <div><span class="text-2xl">🟦</span> <span class="font-medium">Core Functionality</span> <span class="text-sm text-gray-600">(Essential for all Butlr models)</span></div>
+                    <div><span class="text-2xl">🟩</span> <span class="font-medium">Enhanced Capabilities</span> <span class="text-sm text-gray-600">(Available in mid-to-high-tier models)</span></div>
+                    <div><span class="text-2xl">🟪</span> <span class="font-medium">Advanced/Hyperdimensional</span> <span class="text-sm text-gray-600">(Premium features)</span></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- BUTLR Model 300 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/300.png" alt="BUTLR Model 300" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $299
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 300</h3>
+                        <p class="text-gray-700 mb-4">
+                            Experience the foundational intelligence of Butlr with the Model 300. This sleek and modern device
+                            brings the power of autonomous goal management to your fingertips.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟦 Autonomous Goal Management with dynamic prioritization</li>
+                                <li>🟦 Contextual Memory for ongoing objectives</li>
+                                <li>🟦 Natural Language Interaction for intuitive control</li>
+                                <li>🟦 Integration with select smart home devices</li>
+                                <li>🟦 Sleek, modern design to complement any space</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>Quad-Core ARM Cortex-A53</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>Integrated graphics</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>Basic on-device AI acceleration</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>Single, full-range speaker driver</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>Basic LED indicator display</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Primarily plastic construction</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>10cm x 10cm x 15cm</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>0.5 kg</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>1GB LPDDR4</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>8GB eMMC</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>Basic fixed-focus (720p)</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>Single/dual mic array with basic noise reduction</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUTLR Model 400 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/400.png" alt="BUTLR Model 400" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $399
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 400</h3>
+                        <p class="text-gray-700 mb-4">
+                            Step up to enhanced smart assistance with the Butlr Model 400. Building upon the core capabilities of Butlr,
+                            the Model 400 introduces improved multi-modal perception.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟩 Enhanced Multi-Modal Perception with voice and basic sensor data integration</li>
+                                <li>🟩 Adaptive Planning for anticipating related actions</li>
+                                <li>🟩 Improved Learning & Adaptability to user preferences</li>
+                                <li>� Expanded compatibility with a wider range of smart home devices</li>
+                                <li>� Premium finish and design</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>Quad-Core ARM Cortex-A55</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>Integrated graphics with enhanced performance</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>Enhanced on-device AI acceleration</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>Improved full-range driver or dual speakers</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>Small color LCD</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Blend of plastic with fabric/metal accents</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>11cm x 11cm x 17cm</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>0.7 kg</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>2GB LPDDR4</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>16GB eMMC</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>Improved fixed-focus (1080p)</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>Dual microphone array with enhanced noise reduction</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUTLR Model 500 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/500.png" alt="BUTLR Model 500" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $499
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 500</h3>
+                        <p class="text-gray-700 mb-4">
+                            The Butlr Model 500 delivers a significant leap in intelligent automation. Experience more sophisticated
+                            multi-modal perception, with the initial integration of image processing.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟩 Advanced Multi-Modal Perception with early-stage image processing</li>
+                                <li>🟩 Enhanced Agent Collaboration for seamless task delegation</li>
+                                <li>🟩 Proactive Suggestions in Natural Language Interaction</li>
+                                <li>🟩 Increased memory capacity for long-term awareness</li>
+                                <li>🟦 Refined design with premium materials</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>Hexa-Core ARM Cortex-A72/A55</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>Entry-level dedicated GPU</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>More capable TPU/NPU for image analysis</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>Stereo system with tweeter and woofer</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>Small, higher-resolution color LCD touchscreen</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Increased use of premium materials</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>12cm x 12cm x 19cm</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>1.0 kg</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>4GB LPDDR4X</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>32GB eMMC</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>Higher-resolution camera (2MP) with wide FOV</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>Multi-microphone array (3-4) with advanced noise cancellation</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUTLR Model 600 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/600.png" alt="BUTLR Model 600" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $499
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 600</h3>
+                        <p class="text-gray-700 mb-4">
+                            Unlock a new level of smart living with the Butlr Model 600. This model boasts further advancements in
+                            multi-modal perception, including more sophisticated object recognition.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟩 Advanced Multi-Modal Perception with enhanced image processing</li>
+                                <li>🟩 Intuitive Adaptive Planning with real-time adjustments</li>
+                                <li>🟩 Seamless Agent Collaboration with a unified knowledge base</li>
+                                <li>🟩 Improved error recovery and alternative suggestions</li>
+                                <li>🟦 Elegant design with customizable lighting features</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>Octa-Core ARM Cortex-A76/A55</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>Mid-range dedicated GPU</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>More powerful TPU/NPU for object recognition</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>High-fidelity stereo with passive radiator</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>Larger, high-resolution color LCD touchscreen</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Significant use of premium materials</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>13cm x 13cm x 21cm</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>1.2 kg</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>6GB LPDDR4X</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>64GB eMMC</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>Higher-resolution camera (5MP) with autofocus</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>Array of 4-6 mics with advanced beamforming</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUTLR Model 700 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/700.png" alt="BUTLR Model 700" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $699
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 700</h3>
+                        <p class="text-gray-700 mb-4">
+                            The Butlr Model 700 represents a premium smart assistant experience with highly refined
+                            multi-modal perception and advanced audio processing.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟩 Highly Refined Multi-Modal Perception with advanced audio processing and OCR</li>
+                                <li>🟩 Enhanced Adaptive Planning with the Pacer module for timing accuracy</li>
+                                <li>🟩 Intelligent Natural Language Interaction with ambiguity handling</li>
+                                <li>🟩 Expanded integration with external services and platforms</li>
+                                <li>🟦 Luxurious design and premium build quality</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>Octa-Core ARM Cortex-A78/A55</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>High-performance dedicated GPU</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>Advanced TPU/NPU for complex image and audio analysis</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>Premium audio system with multiple drivers</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>High-resolution color LCD touchscreen with HDR</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Premium aluminum, fabrics, and wood</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>15cm x 15cm x 23cm</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>1.5 kg</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>8GB LPDDR5</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>128GB UFS</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>High-resolution (8MP+) with wide-angle lens</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>Array of 6-8 high-fidelity mics with sophisticated noise cancellation</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUTLR Model 800 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/800.png" alt="BUTLR Model 800" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $999
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 800</h3>
+                        <p class="text-gray-700 mb-4">
+                            Experience the cutting edge of smart home intelligence with the Butlr Model 800, featuring
+                            state-of-the-art multi-modal perception and proactive re-planning.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟩 State-of-the-Art Multi-Modal Perception with seamless data fusion</li>
+                                <li>🟩 Fully Realized Adaptive Planning with proactive re-planning</li>
+                                <li>🟩 Highly Optimized Agent Collaboration with the Manager Agent</li>
+                                <li>🟪 Early Meta-Cognitive features for self-assessment</li>
+                                <li>🟦 Premium audio and visual output for enhanced interaction</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>Next-gen high-performance CPU</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>High-end GPU with increased memory</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>Next-generation TPU/NPU with high TOPS</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>Audiophile-grade sound system</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>Large high-resolution display with advanced tech</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Premium materials with unique design elements</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>Custom premium design</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>Premium build quality</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>12GB LPDDR5X</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>256GB UFS</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>High resolution with advanced features</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>Advanced mic array with AI-powered noise reduction</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUTLR Model 1000 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/1000.png" alt="BUTLR Model 1000" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $1799
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 1000</h3>
+                        <p class="text-gray-700 mb-4">
+                            The Butlr Model 1000 elevates smart living to an unparalleled level with the most advanced
+                            iteration of Butlr's core capabilities.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟩 Unparalleled Multi-Modal Perception for comprehensive environmental awareness</li>
+                                <li>🟩 Highly Intuitive Adaptive Planning with proactive problem-solving</li>
+                                <li>🟩 Seamless Collaboration with an expanding ecosystem of specialized agents</li>
+                                <li>🟪 Advanced Learning & Adaptability for personalized performance</li>
+                                <li>🟦 Cutting-edge design and premium materials for a sophisticated aesthetic</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>Octa-Core ARM Cortex-A76/A55</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>High-performance Mali GPU</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>Advanced neural processing unit (15 TOPS)</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>Premium stereo speakers with Dolby Atmos</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>7-inch 2K touchscreen display</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Premium aluminum and glass construction</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>18cm x 12cm x 20cm</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>1.2 kg</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>16GB LPDDR5</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>512GB UFS 3.1</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>12MP ultra-wide with advanced computer vision</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>8-mic array with spatial audio processing</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUTLR Model 1200 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/1200.png" alt="BUTLR Model 1200" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $2999
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 1200</h3>
+                        <p class="text-gray-700 mb-4">
+                            The Butlr Model 1200 represents a breakthrough in smart home intelligence with advanced
+                            meta-cognitive capabilities and unparalleled perception.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟩 Comprehensive Multi-Modal Perception with advanced scene understanding</li>
+                                <li>🟩 Sophisticated Adaptive Planning with predictive modeling</li>
+                                <li>🟪 Advanced Meta-Cognitive capabilities for self-improvement</li>
+                                <li>🟦 Seamless integration with all major smart home ecosystems</li>
+                                <li>🟦 Premium design with customizable appearance options</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>Next-gen custom SoC with heterogeneous computing</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>Professional-grade GPU with ray-tracing capabilities</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>Advanced neural engine with 8x TOPS performance</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>Studio-quality audio system with Dolby Atmos</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>Premium AMOLED with ambient light adaptation</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Aerospace-grade materials with ceramic accents</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>16cm x 16cm x 24cm</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>1.8 kg</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>24GB LPDDR5X</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>1TB NVMe SSD</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>Triple camera system with depth sensing</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>Advanced 12-mic array with spatial audio capture</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUTLR Model 1400 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/1400.png" alt="BUTLR Model 1400" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $1400
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 1400</h3>
+                        <p class="text-gray-700 mb-4">
+                            The Butlr Model 1400 delivers exceptional smart home intelligence with enhanced
+                            capabilities and superior performance for demanding environments.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟩 Enhanced Multi-Modal Perception with spatial awareness</li>
+                                <li>🟩 Advanced Adaptive Planning with contextual decision-making</li>
+                                <li>🟪 Improved Meta-Cognitive capabilities for continuous learning</li>
+                                <li>🟦 Broad compatibility with smart home ecosystems and services</li>
+                                <li>🟦 Premium design with high-quality materials and finishes</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>High-performance SoC with multi-core architecture</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>Enhanced GPU with dedicated ML processing</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>Advanced neural engine with 12x TOPS performance</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>High-fidelity audio system with spatial sound</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>Premium OLED with adaptive brightness</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Premium aluminum with glass accents</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>16.5cm x 16.5cm x 24.5cm</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>1.9 kg</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>28GB LPDDR5X</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>1.5TB NVMe SSD</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>Quad camera system with wide-angle lens</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>Premium 14-mic array with noise cancellation</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUTLR Model 1500 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" x-data="{ open: false }">
+                    <div class="relative">
+                        <img src="/1500.png" alt="BUTLR Model 1500" class="w-full h-64 object-contain">
+                        <div class="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-tl-lg">
+                            $6000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">BUTLR Model 1500</h3>
+                        <p class="text-gray-700 mb-4">
+                            The flagship Butlr Model 1500 represents the pinnacle of smart home intelligence with
+                            revolutionary capabilities and unmatched performance.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>🟩 State-of-the-art Multi-Modal Perception with real-time 3D mapping</li>
+                                <li>🟩 Revolutionary Adaptive Planning with predictive user modeling</li>
+                                <li>🟪 Fully Realized Meta-Cognitive capabilities with self-optimization</li>
+                                <li>🟦 Universal compatibility with all smart home systems and services</li>
+                                <li>🟦 Exclusive premium design with customizable lighting and display</li>
+                            </ul>
+                        </div>
+
+                        <button
+                            @click="open = !open"
+                            class="flex items-center justify-between w-full text-blue-600 font-semibold hover:text-blue-800"
+                        >
+                            <span>View Technical Specifications</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{'rotate-180': open}"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-cloak class="mt-4 text-sm text-gray-700 border-t pt-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="font-semibold">Processor:</div>
+                                <div>Cutting-edge custom SoC with dedicated AI cores</div>
+
+                                <div class="font-semibold">GPU:</div>
+                                <div>Workstation-class GPU with advanced ML acceleration</div>
+
+                                <div class="font-semibold">TPU/NPU:</div>
+                                <div>Next-gen neural engine with 16x TOPS performance</div>
+
+                                <div class="font-semibold">Speaker:</div>
+                                <div>Reference-quality audio system with adaptive acoustics</div>
+
+                                <div class="font-semibold">Display:</div>
+                                <div>Premium micro-LED with HDR and 240Hz refresh rate</div>
+
+                                <div class="font-semibold">Material:</div>
+                                <div>Exclusive materials with sapphire glass and titanium</div>
+
+                                <div class="font-semibold">Dimensions:</div>
+                                <div>17cm x 17cm x 25cm</div>
+
+                                <div class="font-semibold">Weight:</div>
+                                <div>2.0 kg</div>
+
+                                <div class="font-semibold">Memory (RAM):</div>
+                                <div>32GB LPDDR5X</div>
+
+                                <div class="font-semibold">Storage:</div>
+                                <div>2TB NVMe SSD</div>
+
+                                <div class="font-semibold">Camera:</div>
+                                <div>Professional-grade camera system with LiDAR</div>
+
+                                <div class="font-semibold">Microphone:</div>
+                                <div>Studio-quality 16-mic array with beamforming</div>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-gray-50 py-12 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Why Choose BUTLR?</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Intelligent Automation</h3>
+                        <p class="text-gray-700">BUTLR learns your preferences and routines to automate your home exactly the way you want it, saving time and reducing stress.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Privacy-Focused</h3>
+                        <p class="text-gray-700">Your data stays on your device with edge computing capabilities, ensuring your privacy while still delivering powerful AI features.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Continuous Improvement</h3>
+                        <p class="text-gray-700">BUTLR gets better over time with regular updates and learns from your interactions to provide increasingly personalized assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Customer Testimonials</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <span class="ml-2 text-gray-600">5.0</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">"BUTLR has completely transformed how I interact with my home. It anticipates my needs and makes daily routines effortless. The Model 800 is worth every penny for the time it saves me."</p>
+                        <div class="font-semibold">- Sarah J., Model 800 Owner</div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <span class="ml-2 text-gray-600">5.0</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">"BUTLR has completely transformed how I interact with my home. It anticipates my needs and makes daily routines effortless. The Model 800 is worth every penny for the time it saves me."</p>
+                        <div class="font-semibold">- Sarah J., Model 800 Owner</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
